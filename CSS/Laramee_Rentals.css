@@ -1,0 +1,381 @@
+/*	Code for every page	*/
+body{
+background-image: url("http://i.imgur.com/TdO2qDd.jpg");
+background-size: 2400px;
+}
+#main{
+width: 1000px;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+}
+#language{
+text-align: right;
+color: #B0B0B0;
+margin-bottom: 0px;
+}
+h1{
+background-color: #990000;
+background-image: url("http://i.imgur.com/rWcUpp2.jpg");
+margin-top: 0px;
+margin-bottom: 0px;
+text-align: left;
+height: 230px;
+border: 3px solid #660000;
+}
+#headtxt{
+font-size: 30px;
+color: #B8B8B8;
+font-family: "Lucida Console", Monaco, monospace;
+margin-left: 470px;
+}
+#mini_house{
+width: 170px;
+height: 170px;
+padding-top: 30px;
+margin-left: 30px;
+}
+#Lar{
+color: #B00000;
+font-size: 140%;
+text-decoration: underline;
+}
+#menuBar{
+background-color: #990000;
+margin-top: 5px;
+text-align: center;
+border: 3px solid #660000;
+}
+.homeButton{
+background-color: #550000;
+padding: 7px 30px;
+border: 2px solid #330000;
+margin-left: 20px;
+margin-right: 20px;
+font: bold 16px sans-serif;
+color: #606060;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.homeButton:active{
+position: relative;
+top: 1px;
+}
+footer{
+background-image: url("http://i.imgur.com/ivAQIR0.jpg");
+background-size: 950px 500px; 
+margin-top: 50px;
+border: 3px solid #660000; 
+background-color: #505050;
+margin-bottom: 20px;
+}
+#footerTable{
+padding-top: 16px;
+padding-left:30px;
+padding-right: 30px;
+width: 995px;
+text-align: center;
+}
+th{
+font-size: 22px;
+text-decoration: underline;
+padding-bottom: 10px;
+}
+a:link{
+color: #B0B0B0;
+}
+a:visited{
+color: #B0B0B0;
+}
+#copyright{
+text-align: right;
+font-size: 11px;
+margin-right: 10px;
+}
+
+
+/*	Code for individual pages	*/
+
+/*Home page*/
+#description{
+background-color: #B8B8B8;
+border: 3px solid #660000;
+padding: 15px;
+}
+#homeImg{
+width: 400px;
+margin-left: 40px;
+margin-top: 20px;
+border: 3px solid #660000;
+}
+
+/*Tenants*/
+/*Tenants home*/
+#tent{
+border: 3px solid #660000;
+background-color: #808080;
+padding: 15px;
+font-size: 39px;
+color: white;
+}
+#tenTable{
+margin-top: 30px;
+}
+#tenantPage{
+border: 3px solid #660000;
+background-color: #C0C0C0;
+padding: 25px;
+font-size: 18px;
+}
+#people{
+margin-left: 50px;
+border: 3px solid #660000;
+}
+#createFree{
+font-weight: bold;
+}
+#butI{
+color: white;
+margin-left: 580px;
+}
+.tenantButton{
+height: 50px;
+width: 270px;
+font-size: 24px;
+color: white;
+margin-top: 5px;
+margin-left: 130px;
+margin-right: 40px;
+background-color: #FF5F00;
+border: 3px solid #909090;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+box-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.tenantButton:active{
+position: relative;
+top: 1px;
+}
+
+/*Tenant Profile*/
+#profPage{
+text-align: center;
+margin-top: 30px;
+}
+#profTitle{
+font-size: 35px;
+text-decoration: underline;
+color: #B8B8B8;
+}
+.formTitle{
+font-size: 28px;
+color: #505050;
+}
+#profile{
+margin: 0 auto;
+width: 750px;
+background-color: #E0E0E0;
+border: 3px solid gray;
+padding: 25px;
+font-size: 19px;
+color: #202020;
+}
+.profileInput{
+margin-left: 10px;
+font-size: 16px;
+border: 1px solid gray;
+}
+#basicInfo{
+border: 1px solid #B0B0B0;
+padding: 23px;
+}
+#rentalPreferences{
+border: 1px solid #B0B0B0;
+padding: 23px;
+}
+#tPet{
+margin-left: 23px;
+}
+#persMess{
+float: left;
+margin-right: 10px;
+}
+.profButton{
+height: 40px;
+width: 245px;
+font-size: 20px;
+color: white;
+margin-top: 30px;
+margin-left: 60px;
+margin-right: 60px;
+margin-bottom: 10px;
+background-color: #FF8800;
+border: 2px solid #909090;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+box-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.profButton:active{
+position: relative;
+top: 1px;
+}
+
+/*Owners*/
+/*Owners home (Owner profile shares Tenant profile code)*/
+#ownt{
+border: 3px solid #660000;
+background-color: #808080;
+padding: 15px;
+font-size: 39px;
+color: white;
+}
+#ownPeople{
+margin-right: 35px;
+border: 3px solid #660000;
+}
+#ownerPage{
+border: 3px solid #660000;
+background-color: #C0C0C0;
+padding: 25px;
+font-size: 18px;
+}
+#ownTable{
+margin-top: 30px;
+}
+.ownerButton{
+height: 50px;
+width: 270px;
+font-size: 24px;
+color: white;
+margin-top: 5px;
+margin-left: 130px;
+margin-right: 40px;
+background-color: #FF5F00;
+border: 3px solid #909090;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+box-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.ownerButton:active{
+position: relative;
+top: 1px;
+}
+
+
+/*Contact Us page*/
+#contTable{
+margin-top: 20px;
+}
+#contactPage{
+background-color: #B8B8B8;
+border: 3px solid #660000;
+padding: 30px;
+font-size: 20px;
+width: 500px;
+height: 318px;
+}
+#building{
+margin-left: 50px;
+border: 3px solid #660000;
+}
+#cont{
+border: 3px solid #660000;
+background-color: #606060;
+padding: 20px;
+font-size: 37px;
+}
+
+
+/*Registration page*/
+#registration{
+background-color: #D0D0D0;
+width: 605px;
+border: 3px solid #909090;
+margin: 0 auto;
+padding: 25px;
+font-size: 18px;
+}
+#regPage{
+margin-top: 40px;
+text-align: center;
+}
+#regTitle{
+font-size: 34px;
+color: white;
+}
+.regData1{
+height: 30px;
+width: 275px;
+padding: 5px;
+font-size: 20px;
+color: #505050;
+margin: 5px;
+}
+.regData2{
+height: 30px;
+width: 235px;
+padding: 5px;
+font-size: 16px;
+color: #505050;
+margin: 18px;
+margin-left: 30px;
+}
+.regData3{
+height: 30px;
+width: 578px;
+padding: 5px;
+font-size: 20px;
+color: #505050;
+margin: 5px;
+margin-bottom: 0px;
+}
+.regData4{
+height: 30px;
+width: 181px;
+padding: 5px;
+font-size: 20px;
+color: #505050;
+margin: 10px;
+margin-bottom: 0px;
+}
+.regInfo{
+font-size: 13px;
+color: #303030;
+padding-left:10px;
+}
+.passText{
+color: #505050;
+margin-left: 10px;
+font-weight: bold;
+}
+.regButton{
+height: 40px;
+width: 245px;
+font-size: 20px;
+color: white;
+margin-top: 50px;
+margin-left: 29px;
+margin-right: 25px;
+background-color: #FF8800;
+border: 2px solid #909090;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+box-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.regButton:active{
+position: relative;
+top: 1px;
+}
+h2{
+color: white;
+}
+
+
+/*Login page*/
+.logButton{
+padding: 5px;
+margin: 7px;
+width: 134px;
+font-size: 15px;
+}
+.logButton:active{
+position: relative;
+top: 1px;
+}

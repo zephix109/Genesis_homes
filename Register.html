@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<meta name="author" content="Andrew Laramee">
+		<meta name="date" content="march 3, 2015">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="css/text" href="CSS/Laramee_Rentals.css"/>
+		<script type="text/javascript" src="Javascript/Laramee_Rentals.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<!-- Header and Menu bar are identical on every page -->
+			<p id="language"><a href="Register.html">English</a> <a href="Register.html">Francais</a> | <a href="Login.php">Login</a></p>
+			<h1><img id="mini_house" src="Images/mini_house.png" alt="Red house missing"><span id="headtxt"><span id="Lar">Genesis</span>|Homes<br></span></h1>
+			<form id="menuBar">
+				<input type="button" class="homeButton" name="homeButton" value="Home" onclick="goHome()"/>
+				<input type="button" class="homeButton" name="tenantButton" value="Tenants" onclick="goTenants()"/>
+				<input type="button" class="homeButton" name="ownerButton" value="Owners" onclick="goOwners()"/>
+				<Input type="button" class="homeButton" name="contactButton" value="Contact Us" onclick="goContact()"/>
+				<input type="button" class="homeButton" name="regButton" value="Sign Up" onclick="goRegister()"/>
+			</form>
+			<!-- Page specific code starts here -->
+			
+			<p id="regPage">
+				<span id="regTitle">Create an account</span>
+				<form name="regForm" id="registration" method="post" onsubmit="return validateReg()" action="Register.php">
+					<input type="text" name="firstname" class="regData1" value="First name" onfocus="clearFName()"/>
+					<input type="text" name="lastname" class="regData1" value="Last name" onfocus="clearLName()"/><br>
+					<input type="text" name="phonenumber" class="regData1" value="(###)###-####" onfocus="clearPhone()"/>
+					<select name="tenown" class="regData2">
+						<option value="" selected>Select one</option>
+						<option value="tenant">Tenant</option>
+						<option value="owner">Owner</option>
+					</select><br>
+					<input type="text" name="emailaddress" class="regData3" value="Email address" onfocus="clearEmail()"/><br><br><br>
+					<input type="text" name="username" class="regData3" value="Username" onfocus="clearUser()"/><br>
+					<span class="regInfo">(must be at least 6 characters)</span><br>
+					<label class="passText">Password</label>
+					<input type="password" name="userpassword" class="regData4" value="Password" onfocus="clearPassword()"/>
+					<label class="passText">Confirm</label>
+					<input type="password" name="confirmpassword" class="regData4" value="Password" onfocus="clearConfirm()"/><br>
+					<span class="regInfo">(must be at least 6 characters with at least one letter and one number)</span><br>
+					
+					<input type="submit" value="Sign Me Up" class="regButton"/>
+					<input type="reset" value="Clear form" class="regButton"/>
+				</form>				
+				
+				
+			<!-- Footer is identical on every page -->
+			<footer>
+				<table id="footerTable">
+					<tr><th>Site Map</th><th>Contact Us</th><th>Find Us!</th></tr>
+					<tr>
+						<td><a href="HomePage.html">Home</a></td>
+						<td>Laramee-Genesis Ltd.</td>
+					</tr>
+					<tr>
+						<td><a href="TenantHome.html">Tenants</a></td>
+						<td>2480 Benny Crescent</td>
+						<td rowspan=2><img src="Images/facebook.png" alt="Facebook" onclick="goFacebook()"></td>
+					</tr>
+					<tr>
+						<td><a href="OwnerHome.html">Owners</a></td>
+						<td>Montreal, Quebec, H4B-2R3</td>
+					</tr>
+					<tr>
+						<td><a href="Register.html">Sign Up</a></td>
+						<td>Office: 514-994-9092</td>
+					</tr>
+				</table>	
+				<p id="copyright">Laramee-Genesis Copyright © 2015 by Andrew Laramee All rights reserved</p>
+			</footer>
+		</div>
+	</body>
+</html>
